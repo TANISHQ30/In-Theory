@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="50dp"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActivityShowHouseSubmission">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="124dp"
+            android:background="#c0c0c0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:gravity="center_horizontal"
+            android:text="Loan id - A12345678"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:paddingTop="180dp"
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status : Waiting Approval"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="197dp" />
+
+            <TextView
+                android:id="@+id/loanquote_maritalstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marital Status: Married"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="686dp" />
+
+            <TextView
+                android:id="@+id/loanquote_dependents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dependents: 0"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="522dp" />
+
+            <TextView
+                android:id="@+id/loanquote_education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education: Graduate"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="269dp" />
+
+            <TextView
+                android:id="@+id/loanquote_selfemployeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Self-Emolpyeed: No"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="375dp" />
+
+            <TextView
+                android:id="@+id/loanquote_imcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Income: 5720"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="953dp" />
+
+            <TextView
+                android:id="@+id/loanquote_coapplicant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Co-applicant Income: 0"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="836dp" />
+
+            <TextView
+                android:id="@+id/loanquote_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loan Amount: 110,000"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="303dp" />
+
+            <TextView
+                android:id="@+id/loanquote_loanterm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loan Amount Term: 30"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="234dp" />
+
+            <TextView
+                android:id="@+id/loanquote_credithistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit History: 1"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="796dp" />
+
+            <TextView
+                android:id="@+id/loanquote_propertyarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Property Area: Urban"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="645dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/homescreen1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/black_buttons"
+            android:text="Go back"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

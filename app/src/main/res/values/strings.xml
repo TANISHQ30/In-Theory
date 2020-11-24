@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">HomeIt</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_fullscreen_login">FullscreenActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_register">ActivityRegister</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">797218001072399</string>
+    <string name="fb_login_protocol_scheme">fb797218001072399</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_house_thank_you">FullscreenActivity</string>
+    <string name="title_activity_loan_thank_you">FullscreenActivity</string>
+    <string name="server_client_id">694615284928-9osb7r8o2t9qn6de5kh47it32nafu3qo.apps.googleusercontent.com</string>
+    <string name="show_password">Show Password</string>
+
+    <string-array name="waterfront_array">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="view_array">
+        <item>Beach</item>
+        <item>Hills</item>
+        <item>City</item>
+        <item>Forest</item>
+    </string-array>
+
+    <string-array name="housecondition_array">
+        <item>Great(Good as new)</item>
+        <item>Good</item>
+        <item>Moderate</item>
+        <item>Old</item>
+    </string-array>
+</resources>

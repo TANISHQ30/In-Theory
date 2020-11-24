@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="50dp"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityShowHouseSubmission">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="124dp"
+        android:background="#c0c0c0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:gravity="center_horizontal"
+        android:text="House id - A12345678"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="180dp">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status : Waiting Approval"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="197dp" />
+
+        <TextView
+            android:id="@+id/housesub_areabasement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area Basement: 0"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="686dp" />
+
+        <TextView
+            android:id="@+id/housesub_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View: None"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="522dp" />
+
+        <TextView
+            android:id="@+id/housesub_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: 221,900"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="269dp" />
+
+        <TextView
+            android:id="@+id/housesub_livingarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Living Area (sqft): 1180"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="375dp" />
+
+        <TextView
+            android:id="@+id/housesub_livingareain2015"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Living Area (sqft) in 2015: 1340"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="953dp" />
+
+        <TextView
+            android:id="@+id/housesub_latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude: 47.5112"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="836dp" />
+
+        <TextView
+            android:id="@+id/housesub_bedrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bedrooms"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="303dp" />
+
+        <TextView
+            android:id="@+id/housesub_waterfront"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waterfront: No"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="485dp" />
+
+        <TextView
+            android:id="@+id/housesub_dateofsale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of sale : 20141013T000000"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="234dp" />
+
+        <TextView
+            android:id="@+id/housesub_zipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zip code: 98178"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="796dp" />
+
+        <TextView
+            android:id="@+id/housesub_areaabove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area Above (sqft): 1180"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="645dp" />
+
+        <TextView
+            android:id="@+id/housesub_bathrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bathrooms: 1"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="339dp" />
+
+        <TextView
+            android:id="@+id/housesub_yearrenovated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year renovated:"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="758dp" />
+
+        <TextView
+            android:id="@+id/housesub_longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude: -122.257"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="872dp" />
+
+        <TextView
+            android:id="@+id/housesub_yearbuild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year build: 1955"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="721dp" />
+
+        <TextView
+            android:id="@+id/housesub_lotarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lot Area (sqft): 5650"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="408dp" />
+
+        <TextView
+            android:id="@+id/housesub_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Condition: 3"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="565dp" />
+
+        <TextView
+            android:id="@+id/housesub_floors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Floors: 1"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="442dp" />
+
+        <TextView
+            android:id="@+id/housesub_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grade: 7"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="603dp" />
+
+        <TextView
+            android:id="@+id/housesub_lotareain2015"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lot Area (sqft) in 2015: 5650"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="911dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/homescreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/black_buttons"
+        android:text="Go back"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            android:title="My Account" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_baseline_attach_money_24"
+            android:title="Loan Quote" />
+
+        <item
+            android:id="@+id/nav_submithouse"
+            android:icon="@drawable/ic_baseline_add_circle_outline_24"
+            android:title="Submit House" />
+
+        <item
+            android:id="@+id/nav_chatsupport"
+            android:icon="@android:drawable/stat_notify_chat"
+            android:title="Chat Support" />
+
+        <item
+            android:id="@+id/nav_rateandreview"
+            android:icon="@drawable/ic_baseline_star_rate_24"
+            android:title="Rate and Review" />
+
+    </group>
+</menu>
