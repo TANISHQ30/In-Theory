@@ -44,6 +44,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+//import com.android.homeit.MachineLearningKit.MLKit;
 
 import static android.content.ContentValues.TAG;
 
@@ -75,6 +76,8 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
+        //MLKit m = new MLKit();
+
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
         rel1 = (RelativeLayout) root.findViewById(R.id.relLayouthousesubmission);
@@ -90,13 +93,14 @@ public class HomeFragment extends Fragment {
         final FirebaseUser mUser = firebaseAuth.getCurrentUser();
 
         user = FirebaseAuth.getInstance().getCurrentUser();
-        ref = FirebaseDatabase.getInstance().getReference("User");
+        String key = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        ref = FirebaseDatabase.getInstance().getReference("User/"+key);
         userID = user.getUid();
         System.out.println(userID);
 
         //logoutButton = (Button) root.findViewById(R.id.buttonLogout);
 
-        ref.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
+        ref.child("Details").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 User userProfile = snapshot.getValue(User.class);
@@ -131,12 +135,12 @@ public class HomeFragment extends Fragment {
             }
 
             if(mUser != null){
-                 personGivenName = mUser.getDisplayName();
+                 name = mUser.getDisplayName();
                  personalEmail = mUser.getEmail();
                  personPhoto = mUser.getPhotoUrl();
             }
 
-        textViewName.setText(personGivenName);
+        textViewName.setText(name);
 
         rel1.setOnClickListener(new View.OnClickListener() {
             @Override

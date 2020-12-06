@@ -41,15 +41,14 @@
     </string-array>
 
     <string-array name="view_array">
-        <item>Beach</item>
-        <item>Hills</item>
-        <item>City</item>
-        <item>Forest</item>
+        <item>Yes</item>
+        <item>No</item>
     </string-array>
 
     <string-array name="housecondition_array">
         <item>Great(Good as new)</item>
         <item>Good</item>
+        <item>Pleasant</item>
         <item>Moderate</item>
         <item>Old</item>
     </string-array>

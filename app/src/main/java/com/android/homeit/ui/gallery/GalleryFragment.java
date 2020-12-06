@@ -75,11 +75,11 @@ public class GalleryFragment extends Fragment {
             personPhoto = account.getPhotoUrl();
 //                userSession.createUserLoginSession(personId, name, personGivenName, personFamilyName, personalEmail, true);
         }
-
-        if(mUser != null){
+        else if(mUser != null){
             name = mUser.getDisplayName();
             personalEmail = mUser.getEmail();
             personPhoto = mUser.getPhotoUrl();
+            //mUser.get
 //                userSession.createUserLoginSession(personId, name, personGivenName, personFamilyName, personalEmail, true);
         }
 

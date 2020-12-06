@@ -151,9 +151,11 @@ public class ActivityRegister extends AppCompatActivity {
                             System.out.println("Success");
                             User u = new User(fname, lname, email, password, dob, contact_no, gen);
 
-                            FirebaseDatabase.getInstance().getReference("User")
-                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                    .setValue(u).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            String key = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                            FirebaseDatabase.getInstance().getReference("User/"+key+"/Details")
+                                    .setValue(u)
+                                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    //.setValue(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
 

@@ -1,3 +1,4 @@
+
 package com.android.homeit;
 
 import android.app.ProgressDialog;
@@ -59,9 +60,6 @@ public class ActivityLogin extends AppCompatActivity {
     private EditText editTextEmail, editTextPassword;
    // private ProgressBar progressBar;
 
-
-
-
     private static final String TAG = "ERROR";
     private Button loginwithemail;
     private Button loginwithgoogle;
@@ -72,7 +70,7 @@ public class ActivityLogin extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private CallbackManager mCallbackManager;
     private EditText userEmail, userPassword;
-    private String email, pass;
+    private String email, pass, socialmedia;
     private CheckBox checkBoxShowPassword;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,8 +100,8 @@ public class ActivityLogin extends AppCompatActivity {
 
         //signIn.setOnClickListener((View.OnClickListener) this);
 
-        editTextEmail= (EditText) findViewById(R.id.loginemail);
-        editTextPassword= (EditText) findViewById(R.id.loginpassword);
+        //editTextEmail= (EditText) findViewById(R.id.loginemail);
+        //editTextPassword= (EditText) findViewById(R.id.loginpassword);
 
         forgotPassword=(Button) findViewById(R.id.forgotPassword);
 
@@ -167,6 +165,7 @@ public class ActivityLogin extends AppCompatActivity {
                 LoginManager.getInstance().registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
                     @Override
                     public void onSuccess(LoginResult loginResult) {
+                        socialmedia = "facebook";
                         Log.d(TAG, "facebook:onSuccess:" + loginResult);
                         handleFacebookAccessToken(loginResult.getAccessToken());
                     }
@@ -279,6 +278,9 @@ public class ActivityLogin extends AppCompatActivity {
                 progress.setCanceledOnTouchOutside(false);
                 progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                 progress.show();
+
+                socialmedia = "googlelogin";
+
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = task.getResult(ApiException.class);
                 Log.d(TAG, "firebaseAuthWithGoogle:" + account.getId());
@@ -329,6 +331,10 @@ public class ActivityLogin extends AppCompatActivity {
     public void updateUI(FirebaseUser account){
 
         if(account != null){
+            if(socialmedia.compareTo("googlelogin") == 0 || socialmedia.compareTo("facebook") == 0)
+                startActivity(new Intent(this, ActivityFacebookDetails.class));
+            else
+                startActivity(new Intent(this, MainActivity.class));
             Toast.makeText(this,"Signed-In successfully",Toast.LENGTH_SHORT).show();
             startActivity(new Intent(this,MainActivity.class));
             finish();
@@ -353,7 +359,10 @@ public class ActivityLogin extends AppCompatActivity {
             String personId = account.getId();
             Uri personPhoto = account.getPhotoUrl();
             userSession.createUserLoginSession(personId, name, personGivenName, personFamilyName, personalEmail, true);*/
-            startActivity(new Intent(this, MainActivity.class));
+            if(socialmedia.compareTo("googlelogin") == 0 || socialmedia.compareTo("facebook") == 0)
+                startActivity(new Intent(this, ActivityFacebookDetails.class));
+            else
+                startActivity(new Intent(this, MainActivity.class));
             finish();
         }
         super.onStart();
