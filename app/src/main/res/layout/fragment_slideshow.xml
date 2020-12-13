@@ -34,7 +34,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            android:entries="@array/loan_credityhistory"/>
 
         <TextView
             android:id="@+id/textView6"
@@ -127,7 +128,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:entries="@array/loan_dependents"/>
 
         <Spinner
             android:id="@+id/loan_maritalstatus"
@@ -140,7 +142,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            android:entries="@array/loan_maritalstatus"/>
 
         <Spinner
             android:id="@+id/loan_education"
@@ -153,7 +156,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loan_dependents" />
+            app:layout_constraintTop_toBottomOf="@+id/loan_dependents"
+            android:entries="@array/loan_education"/>
 
         <Spinner
             android:id="@+id/loan_selfemployed"
@@ -166,7 +170,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            android:entries="@array/loan_selfemployeed"/>
 
         <Spinner
             android:id="@+id/loan_term"
@@ -179,7 +184,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            android:entries="@array/loan_term"/>
 
         <Button
             android:id="@+id/loan_buttoncontinue"
@@ -189,7 +195,7 @@
             android:layout_marginTop="36dp"
             android:layout_marginEnd="100dp"
             android:background="@drawable/black_buttons"
-            android:text="Sumit"
+            android:text="Submit"
             android:textColor="@color/colorWhite"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

@@ -52,4 +52,46 @@
         <item>Moderate</item>
         <item>Old</item>
     </string-array>
+
+    <string-array name="loan_maritalstatus">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="loan_dependents">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3+</item>
+    </string-array>
+
+    <string-array name="loan_education">
+        <item>Graduate</item>
+        <item>Not Graduate</item>
+    </string-array>
+
+    <string-array name="loan_selfemployeed">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="loan_term">
+        <item>1 year</item>
+        <item>3 years</item>
+        <item>5 years</item>
+        <item>7 years</item>
+        <item>10 years</item>
+        <item>15 years</item>
+        <item>20 years</item>
+        <item>25 years</item>
+        <item>30 years</item>
+        <item>40 years</item>
+    </string-array>
+
+    <string-array name="loan_credityhistory">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+
 </resources>

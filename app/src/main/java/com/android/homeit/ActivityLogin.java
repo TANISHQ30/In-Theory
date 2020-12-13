@@ -57,7 +57,6 @@ import java.util.Arrays;
 public class ActivityLogin extends AppCompatActivity {
 
     private Button forgotPassword;
-    private EditText editTextEmail, editTextPassword;
    // private ProgressBar progressBar;
 
     private static final String TAG = "ERROR";
@@ -133,10 +132,10 @@ public class ActivityLogin extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                 if (!isChecked) {
                     // show password
-                    editTextPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    userEmail.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 } else {
                     // hide password
-                    editTextPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    userPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                 }
             }
         });
@@ -223,14 +222,14 @@ public class ActivityLogin extends AppCompatActivity {
         pass = userPassword.getText().toString().trim();
 
         if(email.isEmpty()){
-            editTextEmail.setError("Email is required!");
-            editTextEmail.requestFocus();
+            userEmail.setError("Email is required!");
+            userEmail.requestFocus();
             return;
         }
 
         if(pass.isEmpty()){
-            editTextPassword.setError("Password is required!");
-            editTextPassword.requestFocus();
+            userPassword.setError("Password is required!");
+            userPassword.requestFocus();
             return;
 
         }
@@ -331,10 +330,10 @@ public class ActivityLogin extends AppCompatActivity {
     public void updateUI(FirebaseUser account){
 
         if(account != null){
-            if(socialmedia.compareTo("googlelogin") == 0 || socialmedia.compareTo("facebook") == 0)
-                startActivity(new Intent(this, ActivityFacebookDetails.class));
-            else
-                startActivity(new Intent(this, MainActivity.class));
+//            if(socialmedia.compareTo("googlelogin") == 0 || socialmedia.compareTo("facebook") == 0)
+             //   startActivity(new Intent(this, ActivityFacebookDetails.class));
+            //else
+            startActivity(new Intent(this, MainActivity.class));
             Toast.makeText(this,"Signed-In successfully",Toast.LENGTH_SHORT).show();
             startActivity(new Intent(this,MainActivity.class));
             finish();
